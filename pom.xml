@@ -11,14 +11,12 @@
     <name>REST API Example</name>
     <description>Simple RESTful API example using Spring Boot</description>
 
-    <!-- 添加 Spring Boot 的父级依赖 -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.5.4</version>
     </parent>
 
-    <!-- 添加 Spring Boot 依赖 -->
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -26,25 +24,11 @@
         </dependency>
     </dependencies>
 
-    <!-- 构建插件配置 -->
     <build>
         <plugins>
-            <!-- 配置 Maven Compiler 插件 -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-
-            <!-- 配置 Spring Boot Maven 插件 -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.5.4</version>
             </plugin>
         </plugins>
     </build>
